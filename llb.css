@@ -166,7 +166,7 @@ header h5 {
 /* Slider styles */
 .slider {
     position: relative;
-    max-width: 60%;
+    max-width: 80%;
     margin: 2% auto;
     overflow: hidden;
     border-radius: 10px;
