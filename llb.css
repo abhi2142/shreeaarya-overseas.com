@@ -1,0 +1,322 @@
+/* Ensure the body and html take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox container to ensure footer sticks to bottom */
+body {
+   background-color: #bff0f6;
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    background-attachment: fixed; /* Ensure the background stays fixed */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content area */
+.container-fluid {
+    flex: 1;
+    padding: 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #02312f; /* Matching header background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding inside the footer */
+    text-align: center; /* Center-align text */
+    border-top: 3px solid #ddd; /* Border at the top */
+}
+
+/* Header styles */
+header {
+    background-color: #02312f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+   
+}
+
+/* Header Text Styles */
+header h1 {
+    font-size: 2.5em;
+    margin-top: 5;
+    font-family: serif;
+    font-weight: bold;
+    float: center;
+}
+.navbar-nav{
+    background-color: #02312f;;
+}
+header h5 {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+.logo {
+    position: absolute; /* Allows for precise positioning */
+    top: 0; 
+    left: 0; 
+    margin-top: 0%;
+    z-index: 10;
+    width: 20%;
+    height: 20%;
+}
+
+
+.btn {
+    position: absolute; /* Allows for precise positioning */
+    top: 0; 
+    right: 0;
+    margin-top: 10%; 
+    margin-right: 1%;
+    width: 60px;
+    z-index: 10;
+    background-color: #007bff;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    margin: 0; /* Reset default margin */
+    margin-top: 0; /* Align with h1 */
+}
+
+.menu-icon .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+.navbar {
+    position:relative;
+    top: 2%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Ensure the navbar contents are aligned to the right */
+    padding-right: 20px; /* Adjust padding as needed */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 15px; /* Spacing between links */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #02312f;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+/* Scroll Container */
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.scroll-text {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Slider styles */
+.slider {
+    position: relative;
+    max-width: 60%;
+    margin: 2% auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Slider navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+/* Custom Section Styles */
+.custom-section {
+    margin: 20px;
+    padding: 50px;
+    border: 1px solid #080000;
+    border-radius: 10px;
+    color: #060606; 
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background-color: rgba(2, 70, 91, 0.681);
+}
+
+/* Adjust section sizes and positions for responsiveness */
+.custom-section1, .custom-section3, .custom-section4, .custom-section5, .custom-section7, .custom-section8 {
+    position: relative;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin: 10px auto;
+}
+.services-section{
+    margin: 20px;
+    padding: 50px;
+    border: 1px solid #080000;
+    border-radius: 10px;
+    color: #080808; 
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background-color: rgba(2, 70, 91, 0.681);
+}
+.contact-section{
+    margin: 20px;
+    padding: 50px;
+    border: 1px solid #080000;
+    border-radius: 10px;
+    color: #080808; 
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background-color: rgba(10, 10, 10, 0.681);
+}
+/* Responsive Design */
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h5 {
+        font-size: 1em;
+    }
+
+    .logo {
+        width: 20%;
+        height: 13%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .scroll-text {
+        font-size: 4vw; /* Larger font size for smaller screens */
+        animation-duration: 10s; /* Slower scroll on smaller screens */
+    }
+
+    .slider {
+        margin: 5% auto;
+        width: 80%;
+    
+        
+    }
+
+    .custom-section, .services-section, .contact-section {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1em;
+    }
+
+    header h5 {
+        font-size: 0.9em;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .prev, .next {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .custom-section, .services-section, .contact-section {
+        padding: 15px;
+        font-size: smaller;
+    }
+
+    .contact-section {
+        background-color: rgba(10, 10, 10, 0.681);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
